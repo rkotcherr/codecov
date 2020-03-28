@@ -1,4 +1,4 @@
-function isPrime(n) {
+export default function(n) {
   if (n == 1) {
     return false;
   } else if(n === 2) {

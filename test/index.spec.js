@@ -18,4 +18,9 @@ describe('Babel usage suite', () => {
     assert(odd.length, 1);
     assert(odd[0], 1);
   });
+
+  it('should return true for 2', () => {
+    const p = isPrime(2);
+    assert(p === true);
+  });
 });
