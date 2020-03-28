@@ -6,7 +6,7 @@
   "scripts": {
     "compile": "babel src -d lib",
     "prepublish": "npm run compile",
-    "test": "nyc --reporter=html mocha"
+    "test": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && codecov"
   },
   "directories": {
     "lib": "./src",

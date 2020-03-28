@@ -1,4 +1,4 @@
-export default list => {
+module.exports = function(list) {
   const ret = [];
 
   for (var i = 0; i < list.length; i++) {
