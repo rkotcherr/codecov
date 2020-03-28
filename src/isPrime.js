@@ -1,4 +1,4 @@
-function isPrime(n) {
+module.exports = function(n) {
   if (n == 1) {
     return false;
   } else if(n === 2) {
