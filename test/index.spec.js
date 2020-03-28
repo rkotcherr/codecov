@@ -1,5 +1,6 @@
 import assert from 'assert';
 import getOdd from '../src/getOdd';
+import isPrime from '../src/isPrime';
 
 describe('Babel usage suite', () => {
   it('should return empty array for empty array', () => {
