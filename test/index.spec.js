@@ -11,4 +11,10 @@ describe('Babel usage suite', () => {
     assert(odd.length, 1);
     assert(odd[0], 1);
   });
+
+  it('should return [1] for [1, 2]', () => {
+    const odd = getOdd([1, 2]);
+    assert(odd.length, 1);
+    assert(odd[0], 1);
+  });
 });
