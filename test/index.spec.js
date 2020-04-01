@@ -11,6 +11,11 @@ describe('Babel usage suite', () => {
     assert(o.length === 0);
   });
 
+  it('should return an array of length 1', () => {
+    const o = getOdd([1, 2]);
+    assert(o.length === 1);
+  });
+
   // isPrime
 
   it('should return false for 1', () => {
