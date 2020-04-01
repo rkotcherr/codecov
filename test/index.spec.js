@@ -27,4 +27,9 @@ describe('Babel usage suite', () => {
     const p = isPrime(2);
     assert(p === true);
   });
+
+  it('should return true for 3', () => {
+    const p = isPrime(3);
+    assert(p === true);
+  });
 });
