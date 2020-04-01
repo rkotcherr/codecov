@@ -32,4 +32,9 @@ describe('Babel usage suite', () => {
     const p = isPrime(3);
     assert(p === true);
   });
+
+  it('should return false for 4', () => {
+    const p = isPrime(4);
+    assert(p === false);
+  });
 });
