@@ -1,10 +1,10 @@
 module.exports = function(n) {
-  if (n == 1) {
+  if (n === 1) {
     return false;
   } else if(n === 2) {
     return true;
   } else {
-    for (const x = 2; x < n; x++) {
+    for (var x = 2; x < n; x++) {
       if(n % x === 0) {
         return false;
       }
