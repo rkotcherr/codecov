@@ -4,6 +4,13 @@ import isPrime from '../src/isPrime';
 
 describe('Babel usage suite', () => {
 
+  // getOdd
+
+  it('should return an empty array', () => {
+    const o = getOdd([]);
+    assert(o.length === 0);
+  });
+
   // isPrime
 
   it('should return false for 1', () => {
