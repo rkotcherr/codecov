@@ -7,7 +7,10 @@
     "compile": "babel src -d lib",
     "prepublish": "npm run compile",
     "test": "nyc mocha",
-    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
+    "test:getOdd": "nyc mocha 'test/getOdd.js'",
+    "test:isPrime": "nyc mocha 'test/isPrime.js'",
+    "report-coverage:getOdd": "nyc report --reporter=text-lcov > coverage.lcov && codecov -c -F getOdd",
+    "report-coverage:isPrime": "nyc report --reporter=text-lcov > coverage.lcov && codecov -c -F isPrime"
   },
   "directories": {
     "lib": "./src",
@@ -20,7 +23,7 @@
     "@babel/register": "^7.0.0",
     "istanbul": "^0.4.5",
     "mocha": "^7.1.1",
-    "nyc": "^15.0.0"
+    "nyc": "^15.0.1"
   },
   "engines": {
     "node": ">=10.0.0"
