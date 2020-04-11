@@ -9,8 +9,8 @@
     "test": "nyc mocha",
     "test:getOdd": "nyc mocha 'test/getOdd.js'",
     "test:isPrime": "nyc mocha 'test/isPrime.js'",
-    "report-coverage:getOdd": "nyc report --reporter=text-lcov > coverage.lcov && codecov -c -F getOdd",
-    "report-coverage:isPrime": "nyc report --reporter=text-lcov > coverage.lcov && codecov -c -F isPrime"
+    "report-coverage:getOdd": "nyc report --reporter=text-lcov > coverage.lcov && codecov -C -F getOdd",
+    "report-coverage:isPrime": "nyc report --reporter=text-lcov > coverage.lcov && codecov -C -F isPrime"
   },
   "directories": {
     "lib": "./src",
