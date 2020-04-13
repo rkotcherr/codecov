@@ -8,9 +8,7 @@
     "prepublish": "npm run compile",
     "test": "nyc mocha",
     "test:getOdd": "nyc mocha 'test/getOdd.js'",
-    "test:isPrime": "nyc mocha 'test/isPrime.js'",
-    "report-coverage:getOdd": "nyc report --reporter=text-lcov > coverage.lcov && codecov -C -F getOdd",
-    "report-coverage:isPrime": "nyc report --reporter=text-lcov > coverage.lcov && codecov -C -F isPrime"
+    "test:isPrime": "nyc mocha 'test/isPrime.js'"
   },
   "directories": {
     "lib": "./src",

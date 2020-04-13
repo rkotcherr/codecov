@@ -4,12 +4,11 @@ node_js:
   - 10
 before_install:
   - npm install -g npm@latest
-  - npm install -g codecov
   - npm install -g nyc
 after_install:
   - ls node_modules/mocha
 script:
   - npm run test:isPrime
-  - npm run report-coverage:isPrime
+  - bash <(curl -s https://codecov.io/bash) -c -F isPrime
   - npm run test:getOdd
-  - npm run report-coverage:getOdd
+  - bash <(curl -s https://codecov.io/bash) -c -F getOdd
