@@ -13,7 +13,7 @@ coverage:
 flags:
   getOdd:
     paths:
-      - src/getOdd
+      - src/getOdd.js
   isPrime:
     paths:
-      - src/isPrime
+      - src/isPrime.js
