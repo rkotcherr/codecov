@@ -5,11 +5,11 @@ coverage:
     getOdd:
       flags:
         - getOdd
-      target: 100%
+      target: 50%
     isPrime:
       flags:
         - isPrime
-      target: 100%
+      target: 50%
 flags:
   getOdd:
     paths:
