@@ -1,2 +1,19 @@
 codecov:
   token: ea2ff929-bce3-4a8d-8751-dc30c13e8e12
+coverage:
+  status:
+    getOdd:
+      flags:
+        - getOdd
+      target: 50%
+    isPrime:
+      flags:
+        - isPrime
+      target: 50%
+flags:
+  getOdd:
+    paths:
+      - src/getOdd.js
+  isPrime:
+    paths:
+      - src/isPrime.js

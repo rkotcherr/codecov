@@ -6,9 +6,4 @@ describe('Babel usage suite', () => {
     const o = getOdd([]);
     assert(o.length === 0);
   });
-
-  it('should return an array of length 1', () => {
-    const o = getOdd([1, 2]);
-    assert(o.length === 1);
-  });
 });
